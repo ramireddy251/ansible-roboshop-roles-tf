@@ -9,3 +9,4 @@ MYSQL_HOST: mysql-"{{ env }}".ramireddy.co.in
 SHIPPING_HOST: shipping-"{{ env }}".ramireddy.co.in
 RABBITMQ_HOST: rabbitmq-"{{ env }}".ramireddy.co.in
 PAYMENT_HOST: payment-"{{ env }}".ramireddy.co.in
+app_version: v3
