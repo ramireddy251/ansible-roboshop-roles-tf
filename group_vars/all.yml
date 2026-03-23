@@ -1,12 +1,12 @@
 ansible_user: ec2-user
 ansible_password: DevOps321
-MONGODB_HOST: mongodb-"{{ env }}".ramireddy.co.in
-CATALOGUE_HOST: catalogue-"{{ env }}".ramireddy.co.in
-REDIS_HOST: redis-"{{ env }}".ramireddy.co.in
-USER_HOST: user-"{{ env }}".ramireddy.co.in
-CART_HOST: cart-"{{ env }}".ramireddy.co.in
-MYSQL_HOST: mysql-"{{ env }}".ramireddy.co.in
-SHIPPING_HOST: shipping-"{{ env }}".ramireddy.co.in
-RABBITMQ_HOST: rabbitmq-"{{ env }}".ramireddy.co.in
-PAYMENT_HOST: payment-"{{ env }}".ramireddy.co.in
+MONGODB_HOST: mongodb-{{ env }}.ramireddy.co.in
+REDIS_HOST: redis-{{ env }}.ramireddy.co.in
+MYSQL_HOST: mysql-{{ env }}.ramireddy.co.in
+RABBITMQ_HOST: rabbitmq-{{ env }}.ramireddy.co.in
+CATALOGUE_HOST: catalogue.backend-alb-{{ env }}.ramireddy.co.in
+USER_HOST: user.backend-alb-{{ env }}.ramireddy.co.in
+CART_HOST: cart.backend-alb-{{ env }}.ramireddy.co.in
+SHIPPING_HOST: shipping.backend-alb-{{ env }}.ramireddy.co.in
+PAYMENT_HOST: payment.backend-alb-{{ env }}.ramireddy.co.in
 app_version: v3
